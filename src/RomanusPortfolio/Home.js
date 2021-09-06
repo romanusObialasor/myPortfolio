@@ -1,5 +1,6 @@
 import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import ReactTypingEffect from "react-typing-effect";
 import styled from "styled-components";
 
 const Home = () => {
@@ -19,7 +20,20 @@ const Home = () => {
         </Top>
         <Line></Line>
         <Body>
-          <span>Hi i'm Romanus Obialasor Web Developer</span>
+          <span>
+            Hi i'm Romanus Obialasor{" "}
+            <Typer
+              text={[
+                "A web Developer",
+                "An Experience Designer",
+                "A FullStack Dev",
+              ]}
+              speed={100}
+              eraseDelay={1000}
+              eraseSpeed={100}
+              typingDelay={500}
+            />
+          </span>
           <Button>About me</Button>
         </Body>
       </Container>
@@ -28,6 +42,10 @@ const Home = () => {
 };
 
 export default Home;
+
+const Typer = styled(ReactTypingEffect)`
+  color: gold;
+`;
 
 const Menu = styled(GiHamburgerMenu)`
   font-size: 30px;

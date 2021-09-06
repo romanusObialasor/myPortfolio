@@ -17,7 +17,7 @@ const Portfolio = () => {
           <span>Good Tailor's Website</span>
         </Box>
         <Box>
-          <Image src="/images/Darksky.jpg" />
+          <Image src="/images/darksky.jpg" />
           <span>Weather app</span>
         </Box>
         <Box>
